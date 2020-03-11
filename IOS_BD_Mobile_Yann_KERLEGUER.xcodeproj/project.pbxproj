@@ -14,6 +14,7 @@
 		089751BC2418DB6C002246E0 /* IOS_BD_Mobile_Yann_KERLEGUER.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 089751BA2418DB6C002246E0 /* IOS_BD_Mobile_Yann_KERLEGUER.xcdatamodeld */; };
 		089751BE2418DB6D002246E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089751BD2418DB6D002246E0 /* Assets.xcassets */; };
 		089751C12418DB6D002246E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089751BF2418DB6D002246E0 /* LaunchScreen.storyboard */; };
+		089751C92418EF60002246E0 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089751C82418EF60002246E0 /* CoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		089751BD2418DB6D002246E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		089751C02418DB6D002246E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		089751C22418DB6D002246E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		089751C82418EF60002246E0 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				089751B32418DB6C002246E0 /* SceneDelegate.swift */,
 				089751B52418DB6C002246E0 /* ViewController.swift */,
 				089751B72418DB6C002246E0 /* Main.storyboard */,
+				089751C82418EF60002246E0 /* CoreData.swift */,
 				089751BD2418DB6D002246E0 /* Assets.xcassets */,
 				089751BF2418DB6D002246E0 /* LaunchScreen.storyboard */,
 				089751C22418DB6D002246E0 /* Info.plist */,
@@ -145,6 +148,7 @@
 				089751B22418DB6C002246E0 /* AppDelegate.swift in Sources */,
 				089751BC2418DB6C002246E0 /* IOS_BD_Mobile_Yann_KERLEGUER.xcdatamodeld in Sources */,
 				089751B42418DB6C002246E0 /* SceneDelegate.swift in Sources */,
+				089751C92418EF60002246E0 /* CoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
