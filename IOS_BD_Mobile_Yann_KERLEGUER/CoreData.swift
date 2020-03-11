@@ -40,17 +40,6 @@ class CoreDataManager{
         }
     }
     
-    func createRandomItems(){
-        
-        
-        let randomData = ["Veste","Chaussures","Pantalon", "Slip"]
-        
-        for name in randomData{
-            let _ = createItemWithName(name, price: 0.0)
-        }
-        saveContext()
-    }
-    
     func createItemWithName (_ name: String, price:Double)-> Item {
         
         let item = Item(context: context)
@@ -58,6 +47,16 @@ class CoreDataManager{
         item.price = price
 
         return item
+    }
+    
+    func createRandomItems(){
+        
+        let randomData = ["Veste","Chaussures","Pantalon", "Slip"]
+        
+        for name in randomData{
+            let _ = createItemWithName(name, price: 0.0)
+        }
+        saveContext()
     }
     
     func loadItems(ascending: Bool,search: String? = nil) -> [Item]? {
@@ -81,10 +80,9 @@ class CoreDataManager{
     }
     
     func changeItemFavoriState(item: Item) {
-        (item.isFavorite) ? (item.isFavorite = false) : (item.isFavorite = true)
+        item.isFavorite = !item.isFavorite
         saveContext()
     }
-    
     
 // MARK: - Core Data stack
 

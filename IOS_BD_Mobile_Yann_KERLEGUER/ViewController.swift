@@ -21,15 +21,21 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBAction func buttonAscending(_ sender: Any) {
         ascending ? (ascending = false) : (ascending = true)
         
-        if let items = dataManager.loadItems(ascending: ascending){
-            self.items = items
-            tableView.reloadData()
+        if(searchBar.text == ""){
+                if let items = dataManager.loadItems(ascending: ascending){
+                    self.items = items
+                    tableView.reloadData()
+                }
+            }else if let items = dataManager.loadItems(ascending: ascending, search: searchBar.text){
+                self.items = items
+                tableView.reloadData()
+            }
+            
         }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
